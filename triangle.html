@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .tip {
+            color: #ff0084;
+            border: #ff0084 1px solid;
+            width: 200px;
+            height: 60px;
+        }
+
+        .triangle {
+            border: 10px solid transparent;
+            position: relative;
+            top: 60px;
+            left: 90px;
+            border-top: 12px solid;
+            width: 0;
+        }
+
+        .triangle::before {
+            border: 10px solid transparent;
+            position: absolute;
+            content: '';
+            border-top: 12px solid #ffffff;
+            top: -14px;
+            left: -10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tip">
+        <div class="triangle"></div>
+    </div>
+</body>
+
+</html>
